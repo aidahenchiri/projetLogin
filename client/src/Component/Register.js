@@ -24,7 +24,7 @@ console.log(newUser)
 <input type="password" name="password" onChange={(e)=>handleUser(e)}></input>
 <label>phone</label>
 <input type="number" name="phone" onChange={(e)=>handleUser(e)}></input>
-<Link to="/Profile"><button onClick={(newUser)=>dispatch(register(newUser))}>Connect</button></Link>   
+<Link to="/Profile"><button onClick={()=>dispatch(register(newUser))}>Connect</button></Link>   
 </form>
 
     </div>

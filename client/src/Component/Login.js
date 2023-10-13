@@ -21,7 +21,7 @@ console.log(user)
 <input type="text" name="username" onChange={(e)=>handleUser(e)}></input>
 <label>Password</label>
 <input type="password" name="password" onChange={(e)=>handleUser(e)}></input>
-<Link to="/Profile"><button onClick={(user)=>dispatch(login(user))}>Connect</button></Link>   
+<Link to="/Profile"><button onClick={()=>dispatch(login(user))}>Connect</button></Link>   
 </form>
 
     </div>

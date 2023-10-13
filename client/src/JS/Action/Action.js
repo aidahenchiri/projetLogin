@@ -17,8 +17,8 @@ export const login = (user) => async(dispatch)=>
 {
     dispatch({type:LOAD_USER})
     try {
-        let result=await axios.post("/api/user/login",user)
-        dispatch({type:LOGIN_USER,payload:result})
+        let result=await axios.post("/api/user/login",user)   //result = user
+        dispatch({type:LOGIN_USER,payload:result.data})
     } catch (error) {
         dispatch({type:FAIL_USER,payload:error.response})
 
